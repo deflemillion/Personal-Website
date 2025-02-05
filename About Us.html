@@ -4,12 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #441752;
+            color: #EFB6C8;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #A888B5;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navdiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .logo a {
+            color: #ffffff;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #ffffff;
+        }
+        h1, h2 {
+            color: #ffffff;
+            text-align: left;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            color: #ffffff;
+            margin-top: 30px;
+        }
+        em {
+            display: block;
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #ffffff;
+        }
+        hr {
+            border: 1px solid #EFB6C8;
+            width: 80%;
+            margin-top: 30px;
+        }
+        .content {
+            padding-left: 20px;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
-    <h1> About Us</h1>
-    <p> This website allows you to buy project files and video edits. This website was created for school and personal purposes. <br><br> This website allows you to buy two kinds of products. The first one is called "Project File." a project file is a file of an edit, where you can see all the effects, overlays, and transitions that are used in the video you're interested in. By buying one, you can copy and paste all the effects, overlays, and transitions you like and paste them to your very own project file. This product is only for editors who use Adobe After Effects 20+ and Alight Motion. <br><br> The second is called commissioning. You can choose an edit on our page "Sample." Once you've chosen an edit, you email us what scenario or video you want us to edit that can look similar to the edit you've chosen. </p>
-    <hr>
-    <p> This website was created by Jerome Guanzon, a 17 y/o Filipnio who was born in the Philippines, and grew up in Cavite, Imus City.</p>
-    <em> Date of Creation : November 3, 2024.</em>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">KOMICHON</a></div>
+            <ul>
+                <li><a href="Main.html">Project Files</a></li>
+                <li><a href="Sample.html">Samples</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>This website allows you to buy project files and video edits. This website was created for school and personal purposes. <br><br> This website allows you to buy two kinds of products. The first one is called "Project File." A project file is a file of an edit, where you can see all the effects, overlays, and transitions that are used in the video you're interested in. By buying one, you can copy and paste all the effects, overlays, and transitions you like and paste them to your very own project file. This product is only for editors who use Adobe After Effects 20+ and Alight Motion. <br><br> The second is called commissioning. You can choose an edit on our page "Sample." Once you've chosen an edit, you email us what scenario or video you want us to edit that can look similar to the edit you've chosen.</p>
+        <hr>
+        <p>This website was created by Jerome Guanzon, a 17 y/o Filipino who was born in the Philippines, and grew up in Cavite, Imus City.</p>
+        <em>Date of Creation: November 3, 2024.</em>
+    </div>
 </body>
 </html>
