@@ -4,18 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komichon</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #441752;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            flex-direction: column;
+            padding-top: 50px;
+            background-image: url('Main Background Image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+            width: 100%;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navdiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .logo a {
+            color: #000000;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: black;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 0 20px;
+            margin: auto;
+            align-items: center;
+        }
+        .project-file {
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 1px 4px 5px rgb(46, 42, 42);
+            transition: transform 0.3s ease;
+            font-family: inherit;
+        }
+        .project-file:hover {
+            transform: scale(1.05);
+        }
+        h2, h1 {
+            color: #441752;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .project-file a {
+            display: inline-block;
+            text-align: center;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .project-file a:hover {
+            background-color: #A888B5;
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .project-file {
+                width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .project-file {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="navdiv">
             <div class="logo"><a href="index.html">KOMICHON</a></div>
             <ul>
-                <li><a href="Main.html">Project Files</a></li>
+                <li><a href="Main.html">Commission</a></li>
                 <li><a href="Sample.html">Samples</a></li>
                 <li><a href="About Us.html">About Us</a></li>
                 <li><a href="Contact Us.html">Contact Us</a></li>
             </ul>
         </div>
     </nav>
+    <div class="container">
+        <div class="project-file">
+            <h2>Fan</h2>
+            <h1>100 PHP</h1>
+            <ul>
+                <li>An edit of your favorite person</li>
+                <li>Music of your choice</li>
+                <li>6-30 seconds edit</li>
+                <li>1080p Quality (HD)</li>
+                <li>No watermark</li>
+            </ul>
+            <a href="https://www.facebook.com/profile.php?id=61568660211815">Buy Now</a>
+        </div>
+        <div class="project-file">
+            <h2>Montage</h2>
+            <h1>250 PHP</h1>
+            <ul>
+                <li>An edit of your game/life highlights</li>
+                <li>Music of your choice</li>
+                <li>10-45 seconds edit</li>
+                <li>1080P Quality (HD)</li>
+                <li>No watermark</li>
+            </ul>
+            <a href="https://www.facebook.com/profile.php?id=61568660211815">Buy Now</a>
+        </div>
+        <div class="project-file">
+            <h2>Birthday</h2>
+            <h1>500 PHP</h1>
+            <ul>
+                <li>Birthday edit of you</li>
+                <li>Music of your choice</li>
+                <li>10-50 seconds edit</li>
+                <li>1080p Quality (HD)</li>
+                <li>No watermark</li>
+            </ul>
+            <a href="https://www.facebook.com/profile.php?id=61568660211815">Buy Now</a>
+        </div>
+    </div>
 </body>
 </html>
